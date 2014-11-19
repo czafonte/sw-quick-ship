@@ -1,0 +1,131 @@
+
+/* Page Styles
+================================ */
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font: normal 1em/1.5 sans-serif;
+	color: #222;
+	background-color: #edeff0;
+}
+
+
+/* Main Layout Styles
+================================ */
+
+.stately {
+    width: 300px;     /* width and font size must match */
+    font-size: 300px; /*width and font size must match */
+    color: #f0f0f0;
+}
+
+.main-header {
+	font-family: 'Exo', sans-serif;
+	font-size: 1em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #384047; 
+}
+.main-header li:last-child {
+		text-align: right;
+		padding-right: 20px;
+	}
+.main-header a {
+	color: white;
+}
+.main-logo {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.5em;
+}
+.main-logo a, 
+.main-nav a {
+	display: block;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+.main-logo a { 
+	background-color: #5fcf80; 
+}
+.main-nav a { 
+	background-color: #3f8abf; 
+}
+.main-footer {
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+ 	background-color: #b7c0c7;
+}
+
+.fedex-form {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.fedex-form iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tg {
+	position: relative;
+	float: left;
+	margin: 25px 0 0 50px;
+}
+
+@media (min-width: 768px) { 
+
+	/* Main Layout Styles
+	================================ */
+
+	body {
+		padding-top: 75px;
+	}
+	.main-header {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+		color: white;
+	}
+
+	li {
+		list-style: none;
+		float: left;
+	}
+
+	.main-nav {
+		text-align: right;
+	}
+	.main-nav li {
+		margin-top: 6px;
+		margin-left: 10px;
+		display: inline-block;
+	}
+	.main-banner {
+		background: #dfe2e4;
+		text-align: center;
+		padding: 50px 15px;
+		margin-bottom: 20px;
+	}
+
+
+}
+
+@media (min-width: 1px) and (max-width: 767px)  {
+	.main-nav li {
+		margin-top: 12px;
+	}
+}
